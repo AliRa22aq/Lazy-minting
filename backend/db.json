@@ -1,1 +1,16 @@
-{"pending":{},"successfull":{"0x70997970C51812dc3A010C7d01b50e0d17dc79C8":{"voucher":{"name":"asdf","uri":"https://ipfs.io/ipfs/bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi","signature":"0xb8bf2b03d0b0cf7a9c8a1bb7bd416dded79dc0a7e1d0f8a278f6bc3124c2931736da031087ddf8081dea6dc861000e92f84de0556575d9647afcb7f50f009d241c"},"userAddress":"0x70997970C51812dc3A010C7d01b50e0d17dc79C8","userName":"asdf","tx":"0x8cc78200c0682cfc3d641f80447d2bc2e2f89a5d303f39af7fbf8438e736dac5"}},"cancelled":{}}
+{
+    "pending": {},
+    "successfull": {
+        "0x70997970C51812dc3A010C7d01b50e0d17dc79C8": {
+            "voucher": {
+                "name": "asdf",
+                "uri": "https://ipfs.io/ipfs/bafybeigdyrzt5sfp7udm7hu76uh7y26nf3efuylqabf3oclgtqy55fbzdi",
+                "signature": "0xb8bf2b03d0b0cf7a9c8a1bb7bd416dded79dc0a7e1d0f8a278f6bc3124c2931736da031087ddf8081dea6dc861000e92f84de0556575d9647afcb7f50f009d241c"
+            },
+            "userAddress": "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
+            "userName": "asdf",
+            "tx": "0x8cc78200c0682cfc3d641f80447d2bc2e2f89a5d303f39af7fbf8438e736dac5"
+        }
+    },
+    "cancelled": {}
+}

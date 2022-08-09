@@ -12,9 +12,6 @@ var fs = require("fs");
 
 require('dotenv').config()
 
-
-
-
 const corsOptions = {
     origin: '*',
     credentials: true,            //access-control-allow-credentials:true
@@ -30,7 +27,6 @@ app.use(bodyParser.json());
 router.get("/", (req, res) => {
     res.send('Hello World from index!')
 });
-
 
 router.post("/handleVoucher", (req, res) => {
     // console.log(req.body);
@@ -84,6 +80,20 @@ router.get("/getSuccessfull", (req, res) => {
 
         let _data = JSON.parse(data);
         res.send(JSON.stringify(_data["successfull"]));
+
+    });
+
+});
+
+router.get("/getCancelledJobs", (req, res) => {
+
+    fs.readFile('db.json', 'utf8', (err, data) => {
+        if (err) {
+            return console.error(err);
+        }
+
+        let _data = JSON.parse(data);
+        res.send(JSON.stringify(_data["cancelled"]));
 
     });
 
@@ -144,10 +154,7 @@ router.post("/executePendingJobs", async (req, res) => {
 
 });
 
-
-// add router in express app
 app.use("/", router);
-
 
 app.listen(8080, () => {
     console.log("Started on PORT 8080");
