@@ -15,3 +15,11 @@ Backend:
 Chainend:
 -> simple erc721 contract
 -> has to have metatransaction/lazyminting capabilities
+
+
+## How to run this stack?
+- Nevigation =>   http://localhost:3000/pendingJobs ,  http://localhost:3000/successfullJobs
+- update the .env file in the backend
+- in contract ->  yarn && npx hardhat node
+- in backend ->  yarn && node index
+- in frontend ->  yarn && yarn dev
